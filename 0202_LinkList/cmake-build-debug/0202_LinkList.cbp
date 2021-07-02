@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="0202_LinkList"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/code/DataStructure/0202_LinkList/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="0202_LinkList">
+				<Option output="E:/code/DataStructure/0202_LinkList/cmake-build-debug/0202_LinkList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/DataStructure/0202_LinkList/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/software/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
+					<Add directory="E:/software/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"/>
+					<Add directory="E:/software/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
+					<Add directory="E:/software/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 0202_LinkList"/>
+					<CompileFile command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="0202_LinkList/fast">
+				<Option output="E:/code/DataStructure/0202_LinkList/cmake-build-debug/0202_LinkList.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/DataStructure/0202_LinkList/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/software/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
+					<Add directory="E:/software/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"/>
+					<Add directory="E:/software/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
+					<Add directory="E:/software/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 0202_LinkList/fast"/>
+					<CompileFile command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/code/DataStructure/0202_LinkList/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/code/DataStructure/0202_LinkList/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/software/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;E:/code/DataStructure/0202_LinkList/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/code/DataStructure/0202_LinkList/LinkList.c">
+			<Option target="0202_LinkList"/>
+		</Unit>
+		<Unit filename="E:/code/DataStructure/0202_LinkList/LinkList.h">
+			<Option target="0202_LinkList"/>
+		</Unit>
+		<Unit filename="E:/code/DataStructure/0202_LinkList/main.c">
+			<Option target="0202_LinkList"/>
+		</Unit>
+		<Unit filename="E:/code/DataStructure/0202_LinkList/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
