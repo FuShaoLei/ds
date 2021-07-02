@@ -1,3 +1,0 @@
-﻿  SqList.c
-E:\code\DataStructure\0201_SqList\0201_SqList\SqList.c(20,20): warning C4047: “=”:“ElemType *”与“ElemType”的间接级别不同
-  0201_SqList.vcxproj -> E:\code\DataStructure\0201_SqList\0201_SqList\Debug\0201_SqList.exe
