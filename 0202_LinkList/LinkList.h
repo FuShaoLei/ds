@@ -13,7 +13,16 @@ typedef struct LNode {
     struct LNode *next;
 } LNode, *LinkList;
 
-Status InitList(LinkList* L);
+Status InitList(LinkList *L);
 
+Status GetElem(LinkList L, int i, ElemType *e);
+
+LNode *LocateElem(LinkList L, ElemType e);
+
+Status ListInsert(LinkList *L, int i, ElemType e);
+
+void CreateList_H(LinkList *L, int n);
+
+void TraverList(LinkList L);
 
 #endif
