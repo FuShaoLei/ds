@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/code/DataStructure/0202_LinkList/LinkList.c
-LinkList.h
 E:/code/DataStructure/0202_LinkList/LinkList.h
-stdlib.h
--
+
+E:/code/DataStructure/0202_LinkList/main.c
 stdio.h
 -
-
+LinkList.h
 E:/code/DataStructure/0202_LinkList/LinkList.h
 
