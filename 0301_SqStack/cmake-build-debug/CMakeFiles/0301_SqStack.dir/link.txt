@@ -1,0 +1,3 @@
+E:\software\jetbrains\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\0301_SqStack.dir/objects.a
+E:\software\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\0301_SqStack.dir/objects.a @CMakeFiles\0301_SqStack.dir\objects1.rsp
+E:\software\Dev-Cpp\MinGW64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\0301_SqStack.dir/objects.a -Wl,--no-whole-archive -o 0301_SqStack.exe -Wl,--out-implib,lib0301_SqStack.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\0301_SqStack.dir\linklibs.rsp
