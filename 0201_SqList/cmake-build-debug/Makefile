@@ -141,33 +141,6 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\0201_SqList.dir\build.make CMakeFiles/0201_SqList.dir/build
 .PHONY : 0201_SqList/fast
 
-SqList.obj: SqList.c.obj
-
-.PHONY : SqList.obj
-
-# target to build an object file
-SqList.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\0201_SqList.dir\build.make CMakeFiles/0201_SqList.dir/SqList.c.obj
-.PHONY : SqList.c.obj
-
-SqList.i: SqList.c.i
-
-.PHONY : SqList.i
-
-# target to preprocess a source file
-SqList.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\0201_SqList.dir\build.make CMakeFiles/0201_SqList.dir/SqList.c.i
-.PHONY : SqList.c.i
-
-SqList.s: SqList.c.s
-
-.PHONY : SqList.s
-
-# target to generate assembly for a file
-SqList.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\0201_SqList.dir\build.make CMakeFiles/0201_SqList.dir/SqList.c.s
-.PHONY : SqList.c.s
-
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -204,9 +177,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 0201_SqList
-	@echo ... SqList.obj
-	@echo ... SqList.i
-	@echo ... SqList.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

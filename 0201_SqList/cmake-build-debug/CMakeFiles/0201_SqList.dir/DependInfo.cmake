@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/code/DataStructure/0201_SqList/SqList.c" "E:/code/DataStructure/0201_SqList/cmake-build-debug/CMakeFiles/0201_SqList.dir/SqList.c.obj"
   "E:/code/DataStructure/0201_SqList/main.c" "E:/code/DataStructure/0201_SqList/cmake-build-debug/CMakeFiles/0201_SqList.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

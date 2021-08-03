@@ -92,12 +92,12 @@ clean: CMakeFiles/0201_SqList.dir/clean
 CMakeFiles/0201_SqList.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\0201_SqList.dir\build.make CMakeFiles/0201_SqList.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\0201_SqList.dir\build.make CMakeFiles/0201_SqList.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\code\DataStructure\0201_SqList\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target 0201_SqList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\code\DataStructure\0201_SqList\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target 0201_SqList"
 .PHONY : CMakeFiles/0201_SqList.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/0201_SqList.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\DataStructure\0201_SqList\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\DataStructure\0201_SqList\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/0201_SqList.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\DataStructure\0201_SqList\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/0201_SqList.dir/rule

@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "0201_SqList.exe"
   "0201_SqList.exe.manifest"
   "0201_SqList.pdb"
-  "CMakeFiles/0201_SqList.dir/SqList.c.obj"
   "CMakeFiles/0201_SqList.dir/main.c.obj"
   "lib0201_SqList.dll.a"
 )

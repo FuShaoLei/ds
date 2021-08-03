@@ -76,12 +76,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/code/DataStructure/0201_SqList/SqList.c">
-			<Option target="0201_SqList"/>
-		</Unit>
-		<Unit filename="E:/code/DataStructure/0201_SqList/SqList.h">
-			<Option target="0201_SqList"/>
-		</Unit>
 		<Unit filename="E:/code/DataStructure/0201_SqList/main.c">
 			<Option target="0201_SqList"/>
 		</Unit>
