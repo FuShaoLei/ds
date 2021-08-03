@@ -4,7 +4,7 @@
 #define OK 1
 #define ERROR 0
 #define OVERFLOW -2
-#define MAX_SIZE 10
+#define MAXSIZE 10
 typedef int Status;
 typedef int ElemType;
 typedef struct { // 线性表的顺序存储结构
@@ -28,20 +28,14 @@ void TraverseList(SqList L);
 int main() {
     SqList L;
     InitList(&L);
-    ListInsert(&L, 0, 1);
     ListInsert(&L, 0, 2);
     ListInsert(&L, 0, 3);
-    ListInsert(&L, 0, 4);
-    ListInsert(&L, 0, 5);
-    ListInsert(&L, 0, 6);
-    TraverseList(L);
-    ListDelete(&L, 2);
     TraverseList(L);
     return 0;
 }
 
 Status InitList(SqList *L) {
-    (*L).elem = (int *) malloc(MAX_SIZE * sizeof(ElemType));
+    (*L).elem = (int *) malloc(MAXSIZE * sizeof(ElemType));
     if ((*L).elem == NULL) return ERROR;
     (*L).length = 0; // 表示空表
     return OK;
@@ -63,24 +57,28 @@ int LocateElem(SqList L, ElemType e) {
 }
 
 Status ListInsert(SqList *L, int i, ElemType e) {
-    if ((*L).elem == NULL || i < 0 || i > (*L).length)
-        return ERROR;
-    for (int j = (*L).length; i != (*L).length && j > i; j--) {
-        (*L).elem[j] = (*L).elem[j - 1];
+    if (L->length == MAXSIZE) return ERROR;
+    if (i < 0 || i > L->length) return ERROR;
+
+    if (i <= L->length) {
+        for (int j = L->length - 1; j > i; j--) {
+            L->elem[j] = L->elem[j - 1]; // 向后移动一位
+        }
     }
-    (*L).elem[i] = e;
-    ++(*L).length;
+
+    L->elem[i] = e;
+    L->length++;
     return OK;
 }
 
 Status ListDelete(SqList *L, int i) {
-    if ((*L).elem == NULL || i < 0 || i >= (*L).length) {
-        return ERROR;
+    if (L->length == 0) return ERROR;
+    if (i < 0 || i >= L->length) return ERROR;
+
+    for (int j = i; j < L->length - 1; j++) {
+        L->elem[j] = L->elem[j + 1]; // 向前移动一个位置
     }
-    for (int j = i; j < (*L).length - 1; j++) {
-        (*L).elem[j] = (*L).elem[j + 1];
-    }
-    --(*L).length;
+    L->length--;
     return OK;
 }
 
@@ -106,6 +104,7 @@ Status ListEmpty(SqList L) {
 void TraverseList(SqList L) {
     if (L.elem == NULL || L.length == 0)
         return;
+    printf("L.length = %d\n", L.length);
     for (int i = 0; i < L.length; i++)
-        printf("%d\n", i, L.elem[i]);
+        printf("L.elem[%d] = %d\n", i, L.elem[i]);
 }
