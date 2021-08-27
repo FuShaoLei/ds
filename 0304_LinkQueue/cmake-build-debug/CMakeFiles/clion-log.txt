@@ -1,4 +1,0 @@
-E:\software\jetbrains\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\code\DataStructure\0304_LinkQueue
--- Configuring done
--- Generating done
--- Build files have been written to: E:/code/DataStructure/0304_LinkQueue/cmake-build-debug

@@ -1,3 +1,0 @@
-E:\software\jetbrains\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\0304_LinkQueue.dir/objects.a
-E:\software\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\0304_LinkQueue.dir/objects.a @CMakeFiles\0304_LinkQueue.dir\objects1.rsp
-E:\software\Dev-Cpp\MinGW64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\0304_LinkQueue.dir/objects.a -Wl,--no-whole-archive -o 0304_LinkQueue.exe -Wl,--out-implib,lib0304_LinkQueue.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\0304_LinkQueue.dir\linklibs.rsp

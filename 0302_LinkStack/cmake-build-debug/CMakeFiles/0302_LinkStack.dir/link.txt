@@ -1,3 +1,0 @@
-E:\software\jetbrains\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\0302_LinkStack.dir/objects.a
-E:\software\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\0302_LinkStack.dir/objects.a @CMakeFiles\0302_LinkStack.dir\objects1.rsp
-E:\software\Dev-Cpp\MinGW64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\0302_LinkStack.dir/objects.a -Wl,--no-whole-archive -o 0302_LinkStack.exe -Wl,--out-implib,lib0302_LinkStack.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\0302_LinkStack.dir\linklibs.rsp
