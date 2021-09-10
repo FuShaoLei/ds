@@ -1,0 +1,3 @@
+E:\software\jetbrains\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\SqList.dir/objects.a
+E:\env\mingw64\bin\ar.exe cr CMakeFiles\SqList.dir/objects.a @CMakeFiles\SqList.dir\objects1.rsp
+E:\env\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\SqList.dir/objects.a -Wl,--no-whole-archive -o SqList.exe -Wl,--out-implib,libSqList.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SqList.dir\linklibs.rsp
