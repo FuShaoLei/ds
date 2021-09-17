@@ -61,7 +61,7 @@ Status insertList(LinkList *head, int i, ElemType e) {
         p = p->next;
         ++k;
     }
-    if (p == NULL || k > i - 1) return ERROR;
+    if (p == NULL || k > i - 1) return ERROR; // 很明显，这里k是不可能大于i-1的，这里体现了代码的健壮性
 
     LNode *s = (LNode *) malloc(sizeof(LNode));
     s->data = e;
@@ -86,7 +86,7 @@ Status deleteList(LinkList *head, int i) {
     }
     if (p->next == NULL || k > i - 1) return ERROR;
     LNode *q = p->next; // 位置是i
-    p->next = q->next;
+    p->next = p->next->next;
     free(q);
     return OK;
 }
