@@ -72,11 +72,12 @@ Status insertList(SqList *L, int i, ElemType e) {
 Status deleteList(SqList *L, int i) {
     if (i < 1 || i > L->length) return ERROR;
     for (int j = i - 1; j < L->length; ++j) {
-        L->elem[j] = L->elem[j+1];
+        L->elem[j] = L->elem[j + 1];
     }
     --L->length;
     return OK;
 }
+
 /**
  * 遍历
  */
@@ -90,6 +91,15 @@ void traverseList(SqList L) {
 }
 
 /**
+ * 获取元素
+ * 因为用的是数组，所以这个操作非常方便
+ */
+Status getElem(SqList L, int i, ElemType *e) {
+    *e = L.elem[i - 1];
+    return OK;
+}
+
+/**
  * 测试
  */
 int main() {
@@ -100,7 +110,10 @@ int main() {
     insertList(&L, 1, 20);
     insertList(&L, 2, 19);
     traverseList(L);
-    deleteList(&L,1);
+    deleteList(&L, 1);
     traverseList(L);
+    ElemType result;
+    getElem(L, 2, &result);
+    printf("result = %d\n", result);
     return 0;
 }

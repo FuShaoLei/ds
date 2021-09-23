@@ -20,8 +20,10 @@ Status initList(LinkList *head) {
     return OK;
 }
 
-// 头插法创建链表（为了方便测试，选择接受一个数组后写入）
-void createList_h(LinkList *head, int n, int arr[]) {
+/**
+* 头插法创建链表（为了方便测试，选择接受一个数组后写入）
+*/
+void createListFromHead(LinkList *head, int n, ElemType arr[]) {
     // 创建链表
     (*head) = (LinkList) malloc(sizeof(LNode));
     (*head)->next = NULL;
@@ -36,10 +38,31 @@ void createList_h(LinkList *head, int n, int arr[]) {
     }
 }
 
+/**
+ * 尾插法创建链表（为了方便测试，选择接受一个数组后写入）
+ */
+void createListFromTail(LinkList *head, int n, ElemType arr[]) {
+    // 创建链表
+    (*head) = (LinkList) malloc(sizeof(LNode));
+
+    LNode *p;
+    LNode *r;
+    r = *head; // 尾指针
+
+    for (int i = 0; i < n; ++i) {
+        // 创建新结点并赋值
+        p = (LNode *) malloc(sizeof(LNode));
+        p->data = arr[i];
+        r->next = p; // 尾指针的指针域指向新结点，如果是第一个结点可表示为 (*head)->next = p;
+        r = p; // 尾指针指向尾部
+    }
+    r->next = NULL;
+}
+
 // 遍历输出
 void traverList(LinkList L) {
     LNode *p = L->next;
-    printf("\nLinkList = [");
+    printf("LinkList = [");
     while (p) {
         printf("%d", p->data);
         p = p->next;
@@ -91,16 +114,37 @@ Status deleteList(LinkList *head, int i) {
     return OK;
 }
 
+/*
+ * 获取元素
+ * 算法：使用j来计数，到i-1个元素为止
+ */
+Status getElem(LinkList head, int i, ElemType *e) {
+    LNode *p = head;
+    int j = 0;
+    while (p != NULL && j < i) {
+        p = p->next;
+        ++j;
+    }
+    *e = p->data;
+    return OK;
+}
+
 int main() {
     LinkList head;
     int a[] = {1, 2, 3};
-    createList_h(&head, 3, a);
+    createListFromHead(&head, 3, a);
     traverList(head);
     insertList(&head, 2, 8);
     traverList(head);
     deleteList(&head, 3);
     traverList(head);
-
+    ElemType result;
+    getElem(head, 2, &result);
+    printf("result = %d\n", result);
+    LinkList head02;
+    int b[] = {8, 12, 3, 56};
+    createListFromTail(&head02, 4, b);
+    traverList(head02);
 
     return 0;
 }
