@@ -9,6 +9,7 @@
 栈：
 
 - 顺序存储：[SqStack](/SqStack)
+- 链式存储：[LinkStack](/LinkStack)
 
 队列：
 
