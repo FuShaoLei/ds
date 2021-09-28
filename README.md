@@ -14,4 +14,5 @@
 队列：
 
 - 链队列：[LinkQueue](/LinkQueue)
+- 循环队列：[SqQueue](/SqQueue)
 
