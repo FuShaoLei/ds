@@ -1,0 +1,3 @@
+E:\software\jetbrains\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\SqDoubleStack.dir/objects.a
+E:\env\mingw64\bin\ar.exe cr CMakeFiles\SqDoubleStack.dir/objects.a @CMakeFiles\SqDoubleStack.dir\objects1.rsp
+E:\env\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\SqDoubleStack.dir/objects.a -Wl,--no-whole-archive -o SqDoubleStack.exe -Wl,--out-implib,libSqDoubleStack.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SqDoubleStack.dir\linklibs.rsp

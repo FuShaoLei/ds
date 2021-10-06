@@ -10,6 +10,7 @@
 
 - 顺序存储：[SqStack](/SqStack)
 - 链式存储：[LinkStack](/LinkStack)
+- 两栈共享空间：[SqDoubleStack](/SqDoubleStack)
 
 队列：
 
