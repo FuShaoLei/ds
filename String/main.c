@@ -22,6 +22,24 @@ Status initStr(SString T, const char *chars) {
     return OK;
 }
 
+/**
+ * 朴素的模式匹配算法
+ */
+int simpleMatch(SString S, SString T, int pos) {
+    int i = pos;
+    int j = 1;
+    while (i <= S[0] && j <= T[0]) {
+        if (S[i] == T[j]) {
+            ++i;
+            ++j;
+        } else {
+            i = i - j + 2;
+            j = 1;
+        }
+    }
+    if (j > T[0]) return i - T[0];
+    else return 0;
+}
 
 /**
  * 获得kmp算法要使用的next数组
@@ -31,37 +49,37 @@ Status initStr(SString T, const char *chars) {
  * 4，如果不等，则继续沿着next值进行寻找，若找到了相同的，则next[j] = next[x]+1
  * 5，若找不到，则 next[j] = 1
  */
-void getNext(SString T, int next[]) {
-    next[1] = 0;
-    next[2] = 1;
-    for (int i = 3; i <= T[0]; ++i) {
-        if (T[i - 1] == T[next[i - 1]]) {
-            next[i] = next[i - 1] + 1;
-        } else {
-            next[i] = 1;
-        }
-    }
-}
-
 void get_next(SString T, int next[]) {
     int i = 1;
     int j = 0;
     next[1] = 0;
-    printf("-------------------------\n");
     while (i < T[0]) {
-        printf("begin i = %d, j = %d\n", i, j);
         if (j == 0 || T[i] == T[j]) {
             ++i;
             ++j;
             next[i] = j;
-            printf("next[%d] = %d\n", i, next[i]);
         } else {
             j = next[j];
-            printf("j = %d\n",j);
         }
-        printf("end i = %d, j = %d\n", i, j);
-        printf("-------------------------\n");
     }
+}
+
+/**
+ * KMP模式匹配算法
+ */
+int kmpMatch(SString S, SString T, int pos, int next[]) {
+    int i = pos;
+    int j = 1;
+    while (i <= S[0] && j <= T[0]) {
+        if (j == 0 || S[i] == T[j]) {
+            ++i;
+            ++j;
+        } else {
+            j = next[j];
+        }
+    }
+    if (j > T[0]) return i - T[0];
+    else return 0;
 }
 
 
