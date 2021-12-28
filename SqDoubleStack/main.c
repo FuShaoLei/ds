@@ -39,9 +39,3 @@ Status pop(SqDoubleStack *S, SElemType *e, int stackId) {
     }
     return OK;
 }
-
-
-int main() {
-
-    return 0;
-}

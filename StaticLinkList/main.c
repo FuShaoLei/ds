@@ -13,8 +13,6 @@ typedef struct {
     int cur; // 游标，用来替代next的
 } Component, StaticLinkList[MAXSIZE];
 
-
-
 /**
  * 初始化
  * 静态链表的第一个元素的cur存放备用链表的第一个结点的下标
